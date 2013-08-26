@@ -1,4 +1,4 @@
-autocmd BufRead,BufNewFile *.fish setfiletype fish
+autocmd BufRead,BufNewFile *.fish set filetype=fish
 
 " Detect fish scripts by the shebang line.
 autocmd BufRead *
@@ -15,7 +15,7 @@ autocmd BufRead fish_funced_*_*.fish
             \ startinsert!
 
 " Fish histories are YAML documents.
-autocmd BufRead,BufNewFile ~/.config/fish/fish_{read_,}history setfiletype yaml
+autocmd BufRead,BufNewFile ~/.config/fish/fish_{read_,}history set filetype=yaml
 
 " Universal variable storages should not be hand edited.
 autocmd BufRead,BufNewFile ~/.config/fish/fishd.* setlocal readonly
